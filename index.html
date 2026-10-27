@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision 2030 - Decathlon</title>
+  <style>
+    :root {
+      --decathlon-blue: #0082C3;
+      --decathlon-dark: #00102A;
+      --bg-light: #F4F5F7;
+      --card-bg: #FFFFFF;
+      --text-color: #1A1A1A;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--decathlon-blue);
+      color: white;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .badge {
+      background-color: var(--decathlon-dark);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      color: var(--decathlon-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      border-left: 5px solid var(--decathlon-blue);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      color: var(--decathlon-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .card-desc {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-date {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      text-align: center;
+      background-color: var(--decathlon-blue);
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #0069a0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+      font-size: 0.85rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DECATHLON</h1>
+    <span class="badge">Vision 2030</span>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <h2>Portail de Présentations & Stratégie</h2>
+      <p>Retrouvez ici l'ensemble des decks et documents officiels synchronisés.</p>
+    </section>
+
+    <main class="grid">
+      <!-- Carte 1 -->
+      <article class="card">
+        <div>
+          <h3 class="card-title">Présentation Stratégique 2030</h3>
+          <p class="card-desc">Vue d'ensemble des piliers stratégiques et des objectifs globaux pour les prochaines années.</p>
+          <div class="card-date">Mis à jour récemment</div>
+        </div>
+        <a href="#" class="btn">Consulter le deck</a>
+      </article>
+
+      <!-- Carte 2 -->
+      <article class="card">
+        <div>
+          <h3 class="card-title">Rapport RSE & Éco-conception</h3>
+          <p class="card-desc">Analyse des impacts environnementaux et roadmap de réduction des émissions de carbone.</p>
+          <div class="card-date">Mis à jour récemment</div>
+        </div>
+        <a href="#" class="btn">Consulter le deck</a>
+      </article>
+
+      <!-- Carte 3 -->
+      <article class="card">
+        <div>
+          <h3 class="card-title">Innovation & Offre Produits</h3>
+          <p class="card-desc">Feuille de route des nouveaux équipements sportifs et technologies intégrées.</p>
+          <div class="card-date">Mis à jour récemment</div>
+        </div>
+        <a href="#" class="btn">Consulter le deck</a>
+      </article>
+    </main>
+  </div>
+
+  <footer>
+    <p>Site de démonstration Vision 2030 — Hébergé sur GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
